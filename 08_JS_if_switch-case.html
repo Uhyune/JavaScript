@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>if, switch-case</title>
+	<script>
+		//if (조건식) {} 
+        //if (조건식) {} else {}
+        //if (조건식) {} else if () {} else if () {} else {}
+        if(true){
+            document.write("if문이 true 인 경우 출력","<br>");
+        }
+        let bool = confirm("true 출력 <확인> 선택,false 출력 <취소> 선택");
+        if(bool){
+            document.write("확인 선택 - true","<br>");
+        }else {
+            document.write("취소 선택 - false","<br>");
+        }
+        document.write("<hr>");
+        //---------------------------------------------------------------
+        /* 점수를 입력 받고 점수에 따라 평가하고 결과를 출력
+        90이상 A 80 이상 B 70이상 C 나머지 D
+        */
+
+        let score = prompt("점수 입력", 90);
+        score = parseInt(score);
+
+        if (score >= 90) {
+            document.write( "점수 : " + score + "평가 결과 : A","<br>");
+        } else if (score >= 80){
+            document.write("점수 : " + score + "평가 결과 : B","<br>");
+        } else if (score >= 70) {
+            document.write("점수 : " + score + "평가 결과 : C","<br>");
+        }else {
+            document.write("점수 : " + score + "평가 결과 : D","<br>");
+        }
+        document.write("<hr>");
+
+        //------------------------------------------------------------
+        document.write("---숫자 문자열 vs 숫자 : 숫자혀변환 --------<br>");
+        document.write("'100' > '20' : "+('100'>'20'),"<br>"); //false
+        document.write("100 > 20 : "+(100>20),"<br>"); //true
+        document.write("'100' > 20 : "+('100'>20),"<br>"); //true
+
+        document.write("-----문자열 (숫자 아닌) vs 숫자 -----------<br>");
+        document.write("'100A' > 20 : "+('100A'>20),"<br>"); //false
+        document.write("'A100' > 20 : "+('A100'>20),"<br>"); //false
+        document.write("'AAA' > 20 : "+('AAA'>20),"<br>"); //false
+        document.write("'100B' > '100A' : " + ('100B' > '100A'), "<br>");
+
+        
+        document.write("-----문자열 vs 문자열 -----------<br>");
+        document.write("'100A' > '20' : "+('100A'>'20'),"<br>"); //false
+        document.write("'A100' > '20' : "+('A100'>'20'),"<br>"); //false
+        document.write("'AAA' > '20' : "+('AAA'>'20'),"<br>"); //false
+        document.write("'100B' > '100A' : " + ('100B' > '100A'), "<br>");
+
+        document.write("-------자바 스크립트 끝------------", "<br>");
+ 	</script>
+</head>
+<body>
+	
+</body>
+</html>

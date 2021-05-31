@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title></title>
+	<script>
+		//var 변수 사용범위 function 레벨
+        // let const : 변수 사용범위 {} 기준
+        // const : 상수화된 변수 (자바에서 final 선언과 유사)
+
+        //var 변수 : 변수 선언문 이전에도 사용 가능하고 중복 선언도 가능
+        document.write("변수 선언문 이전 varNum : " + varNum, "<br>");
+        var varNum = 100;
+        var varNum = 200;
+        document.write("변수 선언문 이후 varNum : " + varNum, "<br>");
+        document.write("<hr>");
+
+        //ECMAScript6에서 추가된 변수 선언문
+        //let const : 변수 선언문 이후에만 사용 가능 중복 선언 안됌
+
+        //document.write("let 변수 선언 전 " + letNum,"<br>");
+        let letNum = 100;
+        //let letNum = 200;
+        document.write("let 변수 선언 후 " + letNum,"<br>");
+        //------------------------------------------------------------
+        const CONST_VAR = "const변수는 처음 한번만 값 설정 가능";
+        //CONST_VAR = "const 변수값 재 할당" -> 오류
+        document.write("const CONST_VAR : " + CONST_VAR,"<br>");
+
+        document.write("----------JS 끝-----------")
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
